@@ -1,0 +1,145 @@
+.everything {
+	font-family:Gill Sans MT, sans-serif;
+	position: fixed;
+	bottom: 0;
+	background: transparent;
+	color: transparent;
+	width: 100%;
+	padding: 20px;
+}
+
+#re-Vid{
+    position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    text-align: right;
+	font-size: 2em;
+    padding: 10px;
+}
+ 
+a:link {
+ color: white;
+}
+
+a:visited {
+ color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+header{
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;    
+}
+
+header logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+
+header logo img{
+    height: 50px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+	background-color: transparent;
+    color: white;
+    padding: 20px;
+    text-align: left;
+  }
+  
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: left;
+}
+
+.box-part-wrapper{
+	object-fit: cover;
+	position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 0;
+}
+
+.box-part-wrapper h2{
+    color: rgba(255, 255, 255, 0.255);
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.boxes-part{
+    display: flex;
+    gap: 80px;
+    height: 400px;
+    width: 1000px;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box img{
+    width: 190px;
+    height: 180px;
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+.box p{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: lighter;
+}
