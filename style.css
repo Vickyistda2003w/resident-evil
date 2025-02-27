@@ -1,0 +1,87 @@
+/* Allgemeine Stile */
+body {
+    font-family: "Gill Sans MT", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Verhindert das Scrollen */
+    color: white;
+}
+
+/* Hintergrundvideo */
+#re-Vid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Stellt sicher, dass das Video hinter allen Elementen bleibt */
+}
+
+/* Fest positioniertes Logo oben links */
+#fixed-logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 150px; /* Falls das Logo zu groß oder klein ist, hier anpassen */
+    height: auto;
+    z-index: 3; /* Über allen anderen Elementen */
+}
+
+/* Zentrierter Hauptinhalt */
+.center {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Halbtransparenter Hintergrund für bessere Lesbarkeit */
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* Überschriften */
+h1 {
+    margin-top: 100px; /* Abstand, damit es nicht vom Logo überdeckt wird */
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/* Bilder */
+.center img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Fußzeile */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 2;
+}
+
+/* Links in der Fußzeile */
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

@@ -1,65 +1,60 @@
 <!DOCTYPE html>
 <html lang="de">
 
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Resident Evil</title>
-		<link rel="stylesheet" href="CSS/style.css">
-		<link rel="icon" type="image/png" href="https://webseiten-daten.cc/sofa/residentevil/favicon-96x96.png" sizes="96x96" />
-		<link rel="icon" type="image/svg+xml" href="https://webseiten-daten.cc/sofa/residentevil/favicon.svg" />
-		<link rel="shortcut icon" href="https://webseiten-daten.cc/sofa/residentevil/favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="https://webseiten-daten.cc/sofa/residentevil/apple-touch-icon.png" />
-		<meta name="apple-mobile-web-app-title" content="Umbrella" />
-		<link rel="manifest" href="https://webseiten-daten.cc/sofa/residentevil/site.webmanifest" />
-	</head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resident Evil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://webseiten-daten.cc/sofa/residentevil/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="https://webseiten-daten.cc/sofa/residentevil/favicon.svg">
+    <link rel="shortcut icon" href="https://webseiten-daten.cc/sofa/residentevil/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://webseiten-daten.cc/sofa/residentevil/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Umbrella">
+    <link rel="manifest" href="https://webseiten-daten.cc/sofa/residentevil/site.webmanifest">
+</head>
 
 <body>
 
-	<video autoplay="autoplay" muted="muted" loop="loop" id="re-Vid">
-	<source src="bilder/hintergrund.mp4" type="video/mp4">
-	</video>
-	<div class="everything">
-		
-		<div class="head">
-		<header>
-			
-			<div class="topnav">
-				<logo><img src="bilder/logo.png" alt="Logo der Umbrella Cop">Resident Evil</logo>
-  						<a class="seiten/active" href="index.html">Home</a>
- 						<a href="seiten/about.html">Aboud</a>
- 						<a href="seiten/characters.html">Charactere</a>
-  						<a href="seiten/film.html">Filme</a>
-						<a href="seiten/videospiele.html">Videospiele</a>
-			</div>
-		</header>
-		</div>
+    <!-- Hintergrundvideo -->
+    <video autoplay muted loop id="re-Vid">
+        <source src="bilder/hintergrund.mp4" type="video/mp4">
+        Dein Browser unterstützt kein HTML5-Video.
+    </video>
 
-		<div class="center">
-			<main>
-				<img src="bilder/racconcity.jpg" alt="Bild einer brennenden Stadt mit denn Namen Raccoon City" align="left">
-				<h3>Resident Evil – Zusammenfassung</h3>
-				<p>Resident Evil ist eine bekannte Videospielreihe, die ursprünglich 1996 von Capcom entwickelt wurde.<br />
-				Die Reihe ist vor allem für ihre Mischung aus Horror, Survival und Action bekannt.<br />
-				Die Handlung dreht sich meist um die Bedrohung durch die Umbrella Corporation, ein multinationales Unternehmen, das an der Entwicklung von biologischen Waffen arbeitet.<br />
-				Diese Waffen – vor allem der "T-Virus" – verwandeln Menschen und Tiere in Zombies und andere gefährliche Kreaturen.<br /><br />
-				Die Hauptfiguren in der Serie sind oft Mitglieder von S.T.A.R.S. (Special Tactics and Rescue Service), einer Eliteeinheit der Polizei, darunter Charaktere wie Chris Redfield, Jill Valentine, Leon S. Kennedy und Claire Redfield.<br />
-				In den Spielen kämpfen sie gegen die Zombies, während sie versuchen, die wahren Verantwortlichen hinter den Biowaffenangriffen zu entlarven und die Welt vor der Apokalypse zu retten.<br />
-				Die Reihe hat nicht nur durch ihre Spielewelt Bekanntheit erlangt, sondern auch durch zahlreiche Filme, Comics und Romane.<br />
-				In den Videospielen wechseln die Spielmechaniken zwischen klassischen Survival-Horror-Elementen, bei denen Ressourcen knapp sind, und actionorientierten Abschnitten.<br />
-				Durch die Jahre hinweg hat Resident Evil eine treue Fangemeinde gewonnen und sich als eines der erfolgreichsten Franchises in der Geschichte der Videospiele etabliert.</p>
-			</main>
-		</div>
+    <!-- Fest positioniertes Logo -->
+    <header>
+        <img src="bilder/logo.png" alt="Umbrella Corporation Logo" id="fixed-logo">
+        <h1>Resident Evil</h1>
+    </header>
 
-		<div class="footer">
-			<footer>
-				<a href="impressum.html">Impressum [Nicht Vorhanden]</a>
-				<a href="datenschutz.html">Datenschutz [Nicht Vorhanden]</a>
-			</footer>
-		</div>
-  
-	</div>
-	
+    <main class="center">
+        <img src="bilder/racconcity.jpg" alt="Brennende Stadt Raccoon City">
+        <h3>Resident Evil – Zusammenfassung</h3>
+        <p>
+            Resident Evil ist eine bekannte Videospielreihe, die ursprünglich 1996 von Capcom entwickelt wurde.
+            Die Reihe ist vor allem für ihre Mischung aus Horror, Survival und Action bekannt.
+            Die Handlung dreht sich meist um die Bedrohung durch die Umbrella Corporation, ein multinationales Unternehmen,
+            das an der Entwicklung von biologischen Waffen arbeitet. Diese Waffen – vor allem der "T-Virus" – verwandeln
+            Menschen und Tiere in Zombies und andere gefährliche Kreaturen.
+        </p>
+        <p>
+            Die Hauptfiguren sind oft Mitglieder von S.T.A.R.S. (Special Tactics and Rescue Service), darunter Chris Redfield,
+            Jill Valentine, Leon S. Kennedy und Claire Redfield. In den Spielen kämpfen sie gegen Zombies und versuchen,
+            die Verantwortlichen hinter den Biowaffenangriffen zu entlarven.
+        </p>
+        <p>
+            Die Reihe ist nicht nur durch ihre Spiele bekannt, sondern auch durch Filme, Comics und Romane. Sie wechselt zwischen
+            klassischen Survival-Horror-Elementen und actionreichen Abschnitten und hat sich als eines der erfolgreichsten
+            Franchises der Videospielgeschichte etabliert.
+        </p>
+    </main>
+
+    <footer class="footer">
+        <a href="impressum.html">Impressum [Nicht Vorhanden]</a>
+        <a href="datenschutz.html">Datenschutz [Nicht Vorhanden]</a>
+    </footer>
+
 </body>
 
 </html>
