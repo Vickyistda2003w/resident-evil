@@ -1,4 +1,4 @@
 # resident-evil
 ein Projekt in meiner Fortbildung
 
-Stand: 26.02.2025 17:50 Uhr
+Stand: 27.02.2025 16:50 Uhr
