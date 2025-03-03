@@ -25,22 +25,9 @@ body {
     position: fixed;
     top: 10px;
     left: 10px;
-    width: 150px; /* Falls das Logo zu groß oder klein ist, hier anpassen */
+    width: 150px;
     height: auto;
     z-index: 3; /* Über allen anderen Elementen */
-}
-
-/* Hauptinhalt */
-.center {
-    position: relative;
-    z-index: 1;
-    display: block;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.6); /* Halbtransparenter Hintergrund für bessere Lesbarkeit */
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
-    border-radius: 10px;
 }
 
 /* Überschriften */
@@ -48,6 +35,20 @@ h1 {
     margin-top: 100px; /* Abstand, damit es nicht vom Logo überdeckt wird */
     font-size: 2.5em;
     text-align: center;
+}
+
+/* Hauptinhalt */
+.center {
+    position: relative;
+    z-index: 1;
+    display: block;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6); /* Halbtransparenter Hintergrund für bessere Lesbarkeit */
+    padding: 20px;
+    max-width: 67%;
+    margin: 20px auto;
+    border-radius: 10px;
+	font-size: calc(8px + (24 - 18) * (100vw - 400px) / (800 - 400)); /* Schriftgröße passt sich an */
 }
 
 /* Bilder */
@@ -58,11 +59,32 @@ h1 {
     margin-bottom: 20px;
 }
 
+.image-container {
+    display: flex; /* Flexbox aktiviert */
+    justify-content: space-between; /* Abstand zwischen den Bildern */
+    gap: 20px; /* Abstand zwischen den einzelnen Bildern */
+    flex-wrap: wrap; /* Wenn der Bildschirm zu klein ist, brechen die Bilder in die nächste Zeile */
+}
+
+.image-item {
+    text-align: center; /* Zentriert das Bild und den Text */
+    width: 23%; /* Die Bilder nehmen je 23% der Breite ein, sodass 4 nebeneinander passen */
+}
+
+img {
+    width: 100%; /* Bild passt sich der Breite des Containers an */
+    height: auto; /* Bild behält das Seitenverhältnis bei */
+}
+
+.caption {
+    margin-top: 8px; /* Etwas Abstand zwischen Bild und Unterschrift */
+}
+
 /* Fußzeile */
 .footer {
     position: relative;
     width: 100%;
-    background-color: rgba(255, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     text-align: center;
     padding: 10px;
