@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: auto; /* Ermöglicht Scrollen */
+	overflow-x: hidden; /* Verhindert das horizontale Scrollen */
     color: white;
 }
 
@@ -22,12 +23,14 @@ body {
 
 /* Fest positioniertes Logo oben links */
 #fixed-logo {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    width: 150px;
-    height: auto;
-    z-index: 3; /* Über allen anderen Elementen */
+	position: fixed;
+	top: 10px; /* Abstand von oben */
+	left: 10px; /* Abstand von links */
+	width: auto; /* Breite automatisch anpassen, damit das Seitenverhältnis erhalten bleibt */
+	height: auto; /* Höhe automatisch anpassen, damit das Seitenverhältnis erhalten bleibt */
+	max-width: 200px; /* Maximale Breite des Logos */
+	max-height: 100px; /* Maximale Höhe des Logos */
+	z-index: 3; /* Über allen anderen Elementen */
 }
 
 /* Überschriften */
@@ -35,6 +38,35 @@ h1 {
     margin-top: 100px; /* Abstand, damit es nicht vom Logo überdeckt wird */
     font-size: 2.5em;
     text-align: center;
+}
+
+/* Menüband Styling */
+.navbar {
+    background-color: transparent;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    padding: 15px 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: calc(8px + (24 - 18) * (100vw - 400px) / (800 - 400)); /* Schriftgröße passt sich an */
+    transition: background-color 0.3s;
+}
+
+/* Hover-Effekt für Links */
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
 }
 
 /* Hauptinhalt */
@@ -59,6 +91,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Charaktere Bilder */
 .image-container {
     display: flex; /* Flexbox aktiviert */
     justify-content: space-between; /* Abstand zwischen den Bildern */
