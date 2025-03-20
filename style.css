@@ -99,9 +99,32 @@ h1 {
     flex-wrap: wrap; /* Wenn der Bildschirm zu klein ist, brechen die Bilder in die nächste Zeile */
 }
 
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: calc(8px + (24 - 18) * (100vw - 400px) / (800 - 400)); /* Schriftgröße passt sich an */
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  bottom: 50%; /* Über das Bild */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
 .image-item {
     text-align: center; /* Zentriert das Bild und den Text */
     width: 23%; /* Die Bilder nehmen je 23% der Breite ein, sodass 4 nebeneinander passen */
+	position: relative;
+	display: inline-block;
 }
 
 img {
